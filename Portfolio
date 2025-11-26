@@ -96,7 +96,7 @@
     <h1>Simple Animation</h1>
     <p class="subtitle">A collection of simple and creative animation projects</p>
   </header>
-
+ 
   <section id="projects">
     <div class="project">
       <h2>Animation Video Preview</h2>
@@ -114,7 +114,6 @@
 
     </div>
   </section>
-
   <section id="about" style="max-width:900px; margin:auto; padding:20px;">
     <h2>About Me</h2>
     <p style="opacity:0.85; line-height:1.6;">
