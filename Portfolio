@@ -1,6 +1,5 @@
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Animation Code Portfolio</title>
   <style>
     body {
@@ -10,7 +9,6 @@
       margin: 0;
       padding: 0;
     }
-
     /* Navigation */
     nav {
       display: flex;
@@ -20,25 +18,21 @@
       background: #1a1a1a;
       border-bottom: 1px solid #333;
     }
-
     /* LEFT SIDE (About + Contact) */
     .nav-left {
       display: flex;
       gap: 30px;
     }
-
     /* RIGHT SIDE (Home + Projects) */
     .nav-right {
       display: flex;
       gap: 30px;
     }
-
     nav a {
       color: #fff;
       text-decoration: none;
       font-size: 16px;
     }
-
     header {
       text-align: left;
       padding: 40px;
@@ -79,24 +73,20 @@
   </style>
 </head>
 <body>
-
   <nav>
     <div class="nav-left">
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
     </div>
-
     <div class="nav-right">
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
     </div>
   </nav>
-
   <header id="home">
     <h1>Simple Animation</h1>
     <p class="subtitle">A collection of simple and creative animation projects</p>
   </header>
- 
   <section id="projects">
     <div class="project">
       <h2>Animation Video Preview</h2>
