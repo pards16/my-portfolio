@@ -1,6 +1,7 @@
 <html>
 <head>
-  <title>Animation </title>
+  <title>Animation Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <style>
     body {
@@ -12,7 +13,8 @@
     }
     nav {
       display: flex;
-      justify-content: flex-end;
+      /* Changed to space-between for clarity, keeping flex-end style below */
+      justify-content: flex-end; 
       gap: 30px;
       padding: 20px 40px;
       background: #1a1a1a;
@@ -22,6 +24,11 @@
       color: #fff;
       text-decoration: none;
       font-size: 16px;
+      /* Added hover effect for better user experience */
+      transition: color 0.3s ease; 
+    }
+    nav a:hover {
+        color: #00bcd4; /* A light blue hover color */
     }
     header {
       text-align: left;
@@ -50,6 +57,50 @@
     .project h2 {
       margin-top: 0;
     }
+    /* Set videos to be fully responsive */
+    .project video {
+        width: 100%; 
+        height: auto;
+        max-width: 860px; /* Keep the original max width */
+        border-radius: 8px; /* Added border-radius to match other styles */
+    }
+    
+    /* Style for the character images */
+    .character-images-container {
+        display: flex;
+        flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+        gap: 15px; /* Spacing between images */
+        margin-top: 15px;
+    }
+    .character-images-container img {
+      /* Corrected width from raw number to a percentage/unit */
+      width: 200px; 
+      height: auto;
+      border-radius: 12px;
+      /* Removed the inline margin-top from the HTML for consistency */
+    }
+
+    /* --- Media Queries for Mobile Responsiveness --- */
+    @media (max-width: 600px) {
+        nav {
+            justify-content: center;
+            padding: 15px 20px;
+            gap: 20px;
+        }
+        header {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .character-images-container {
+            /* On small screens, make images smaller or adjust layout */
+            justify-content: center;
+        }
+        .character-images-container img {
+            width: 100px; /* Smaller image size on mobile */
+        }
+    }
   </style>
 </head>
 
@@ -64,19 +115,17 @@
 
 
 <header id="home">
-  <h1>Simple Animation</h1>
-  <p class="subtitle">A simple animation projects</p>
+  <h1>Simple Animation Portfolio</h1>
+  <p class="subtitle">A simple animation projects showcase</p>
 </header>
-
 
 <section id="projects">
   <div class="project">
     <h2>1. Animation Project</h2>
     <p>Animation animation preview</p>
-
-     <video width="860" height="400" controls>
+    <video controls> 
       <source src="video/f83b4ffc-816d-4bee-9891-de182078bfed.mp4" type="video/mp4">
-
+      Your browser does not support the video tag.
     </video>
   </div>
 
@@ -84,26 +133,28 @@
     <h2>2. Animation Project</h2>
     <p>Latest uploaded animation preview.</p>
 
-    <video width="860" height="400" controls>
+    <video controls>
       <source src="video/d3bd3743-558c-414e-80f8-86a1eb1eef74.mp4" type="video/mp4">
-    
+      Your browser does not support the video tag.
     </video>
   </div>
 
    <div class="project">
-    <h2> Character design </h2>
+    <h2>Character Design</h2>
     <p>preview.</p>
-     <img src="images/3788fdb5-cb7e-4ffc-8bbb-23150e7ac7ba.jpg" alt="images" style="width:200; border-radius:12px; margin-top:15px;">
-     <img src="images/66891659-7f63-4386-8488-c5f6808d9921.jpg" alt="images" style="width:200; border-radius:12px; margin-top:15px;">
-     <img src="images/d38de3ba-25bb-417d-a9e6-94c7edd84168.jpg"alt="images" style="width:200; border-radius:12px; margin-top:15px;">
-     <img src="images/75779cef-d3f5-45aa-a53a-494197d67ea0.jpg"alt="images" style="width:200; border-radius:12px; margin-top:15px;">
-
+    <div class="character-images-container">
+        <img src="images/3788fdb5-cb7e-4ffc-8bbb-23150e7ac7ba.jpg" alt="Character Design 1">
+        <img src="images/66891659-7f63-4386-8488-c5f6808d9921.jpg" alt="Character Design 2">
+        <img src="images/d38de3ba-25bb-417d-a9e6-94c7edd84168.jpg" alt="Character Design 3">
+        <img src="images/75779cef-d3f5-45aa-a53a-494197d67ea0.jpg" alt="Character Design 4">
+    </div>
+  </div>
 </section>
 
 <section id="about">
   <h2>About Me</h2>
   <p style="opacity:0.85; line-height:1.6;">
-    I am a Alessi_fajardo digital artist and aspiring animator who enjoys creating
+    I am a **Alessi_fajardo digital artist** and aspiring animator who enjoys creating
     smooth, animation who loves bringing ideas life through simple movement and creative story 
     exploring different styles and turning small concept into visual moments that feel alive...
   </p>
@@ -112,9 +163,9 @@
 <section id="contact">
   <h2>Contact Information</h2>
   <p style="opacity:0.85; line-height:1.6;">
-    Email:alessifajardo20@gmail.com<br>
-    Facebook: AlessiT.Fajardo<br>
-    Instagram: @Alessi_fajardo<br>
+    Email: **alessifajardo20@gmail.com**<br>
+    Facebook: **AlessiT.Fajardo**<br>
+    Instagram: **@Alessi_fajardo**<br>
     Location: Philippines
   </p>
 </section>
